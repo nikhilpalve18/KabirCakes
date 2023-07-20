@@ -1,0 +1,234 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabir Cakes</title>
+  <link rel="stylesheet" href="./css/Home.css">
+  <link rel="stylesheet" href="./commonStyles/common-styles.css">
+  <script src="./commonStyles/common-scripts.js" defer></script> 
+  <script src="./css/Home.js" defer></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" loading="lazy" style="height:8rem; position:relative left:50px">
+        </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span id="span1"></span>
+          <span id="span2"></span>
+          <span id="span3"></span>
+        </div>
+        <div class="navbar-links">
+          <ul>
+				<li class="navLinks"><a href="getProducts?msg=${email}&category=cakes">Cakes</a></li>
+				<li class="navLinks"><a href="getProducts?msg=${email}&category=minibites">Mini Bites</a></li>
+				<li class="navLinks"><a href="About-Us.jsp">About Us</a></li>
+				<li class="navLinks"><a href="Contact-Us.jsp">Contact Us</a></li>
+				<li class="navLinks"><a href="register.jsp"><button class="btn" border-radius:10px;">Login/Register</button></a></li>
+				<li>
+					<form action="login">
+           				 
+					</form>
+				</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="welcome-text">
+      <h1>Welcome </h1>
+      <p class="tag-line">Baked goods like you have never seen before ...</p>
+      <a href="login.jsp">
+	      <button onclick="login.jsp" class="Main-btn colors">Book a piece of Pie</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Discover -->
+
+  <section class="discover">
+    <div class="story-text">
+      <h3> Discover</h3>
+      <h2>Our Story</h2>
+      <p>
+        KABIR CAKES - We Spread Happiness...<br>
+
+        This is the authorised shop of Kabir Cakes. Here you may purchase the superior products manufactured
+        by Kabir Cakes™. Kabir Cakes is the best cake shop in Ahmednagar.<br>
+
+        We sell the best cakes in Ahmednagar in terms of quality and freshness. Also, you may call us the
+        best bakery in Ahmednagar because the ultimate variety of products is nowhere to be found </p><br>
+
+      <button class="btn" onclick="location.href='About-Us.jsp'"> <span>Know more</span> </button>
+    </div>
+
+    <div class="story-img">
+      <img src="./images/story.jpg" alt="story" loading="lazy" loading="lazy">
+    </div>
+  </section>
+
+  <!-- contact-info -->
+
+  <section class="contact-info-container">
+    <div class="contact-info info-hours">
+      <img src="./svgs/clock.svg" alt="clock" loading="lazy">
+      <h3>Hours of Operation</h3>
+      <p>Mon to Fri :8am to 8pm<br>
+        Satur to sun :8am to 1pm</p>
+    </div>
+
+    <div class="contact-info info-location">
+      <img src="./svgs/location.svg" alt="clock" loading="lazy">
+      <h3>Our Location</h3>
+      <p>Shriram chowk,<br>Ahemdnagar 414003</p>
+    </div>
+
+    <div class="contact-info info-get-in-touch">
+
+      <img src="./svgs/Phone.svg" alt="clock" loading="lazy">
+      <h3>Get in Touch</h3>
+      <p>Mob: 9765597034<br>
+        Mob: 7798306888 </p>
+    </div>
+    </div>
+  </section>
+
+  <!-- products -->
+
+  <section class="product-container">
+    <div class="product-heading">
+      <h3>Our Best Sellers</h3>
+      <h2>The Menu</h2>
+    </div>
+    <div class="corousal">
+      <div class="product">
+        <span class="product__price">Rs 500</span>
+        <img class="product__image" src="./images/Butterscotchcake.jpg" loading="lazy">
+        <div class="product-text">
+          <h1 class="product__title">Butterscoch Cake</h1>
+          <hr />
+          <p>Always and forever Delight!
+            This three moist and smooth cake and vanilla cream is something not to be missed.</p>
+          <a href="./Order-Now/Order-Now.html" class="product-btn btn"> <span>Buy Now</span> </a>
+        </div>
+      </div>
+      <div class="product">
+        <span class="product__price">Rs 800</span>
+        <img class="product__image" src="./images/Vanilla.jpg" loading="lazy">
+        <div class="product-text">
+          <h1 class="product__title">Vanilla Cake</h1>
+          <hr />
+          <p>Vanillas are back in trend!
+            Celebrate life and various special milestones of your loved ones life over this vanilla cake...</p>
+          <a href="./Order-Now/Order-Now.html" class="product-btn btn"> <span>Buy Now</span> </a>
+        </div>
+      </div>
+      <div class="product">
+        <span class="product__price">Rs 100</span>
+        <img class="product__image" src="./images/chocolates.jpg" loading="lazy">
+        <div class="product-text">
+          <h1 class="product__title">Chocolates</h1>
+          <hr />
+          <p>Rich and creamy chocolates made from good quality cocoa.
+          </p>
+          <a href="./Order-Now/Order-Now.html" class="product-btn btn"> <span>Buy Now</span> </a>
+        </div>
+      </div>
+      <div class="product">
+        <span class="product__price">Rs 1200</span>
+        <img class="product__image" src="./images/Chocolate.jpg" loading="lazy">
+        <div class="product-text">
+          <h1 class="product__title">Chocolate Cake</h1>
+          <hr />
+          <p>Makes the best impression on your sweet tooth loved ones on special
+            occasions with a lip smacking Chocolate cake....</p>
+          <a href="./Order-Now/Order-Now.html" class="product-btn btn"> <span>Buy Now</span> </a>
+        </div>
+      </div>
+      <div class="product">
+        <span class="product__price">Rs 150</span>
+        <img class="product__image" src="./images/Cup Cake.jpg" loading="lazy">
+        <div class="product-text">
+          <h1 class="product__title">Cup Cakes</h1>
+          <hr />
+          <p>Light and moist cupcakes freshly baked
+            topped with cream cheese frosting</p>
+          <a href="./Order-Now/Order-Now.html" class="product-btn btn"> <span>Buy Now</span> </a>
+        </div>
+      </div>
+      <div class="product">
+        <span class="product__price">Rs 200</span>
+        <img class="product__image" src="./images/pastry.jpg" loading="lazy">
+        <div class="product-text">
+          <h1 class="product__title">Pastry</h1>
+          <hr />
+          <p>Happiness is seeing a freshly baked pastry.A few more calories won’t hurt.Try our extremely delightful
+            pastries and get mesmerized</p>
+          <a href="./Order-Now/Order-Now.html" class="product-btn btn"> <span>Buy Now</span> </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- Review -->
+
+  <section class="review-container">
+    <h3>What Our Customers Say!</h3>
+    <h2>Customers Review</h2>
+    <div class="review">
+      <img class="review-start" src="./images/quotationMark.png" alt="quotationMark" loading="lazy">
+      <p>“ Kabir Cakes was beyond AMAZING! We ordered an Anniversary cake to celebrate our ten years and the cake was
+        the moist and most beautiful cake we have ever had. Thank you Mercedes for making our dreams come true. We loved
+        your design and you made our day so special with the beautiful cake. ”
+      </p>
+      <img class="review-end" src="./images/quotationMark.png" alt="quotationMark" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <section class="footer-container">
+    <div class="logo-social-media">
+      <div class="footer-logo">
+        <img src="./images/logo.png" alt="logo" loading="lazy">
+      </div>
+      <div class="social-media-icons-footer">
+        <h4 style="display: inline;">Connect Us:</h4>
+        <img src="./images/instagram.png" alt="insta logo" loading="lazy">
+        <img src="./images/facebook.png" alt="insta logo" loading="lazy">
+        <img src="./images/whatsapp.png" alt="insta logo" loading="lazy">
+      </div>
+    </div>
+    <div class="newsLetter">
+      <h4>Subscibe to our Newsletter</h4>
+      <div class="news-letter-input"><input type="text" placeholder="Enter your Email"></div>
+    </div>
+  
+    <div class="pages-link">
+      <h4>Pages</h4>
+      <a href="index.html"><p>Home</p></a>
+      <a href="./Cakes/Cakes.html"><p>Cakes</p></a>
+      <a href="./Mini-Bites/Mini-Bites.html"><p>Mini-Bites</p></a>
+      <a href="./About-Us/About-Us.html"><p>About Us</p></a>
+      <a href="./Contact-Us/Contact-Us.html"><p>Contact-Us</p></a>
+    </div>
+  </section>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">👆</button>
+
+</body>
+
+</html>
